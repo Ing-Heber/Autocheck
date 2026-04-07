@@ -1,21 +1,15 @@
 "use client";
 
-import {motion} from "framer-motion";
+import {motion, MotionProps} from "framer-motion";
 import {ReactNode} from "react";
 
-interface ButtonProps {
+interface ButtonProps extends MotionProps {
     children: ReactNode;
     variant?: "primary" | "secondary";
     size?: "sm" | "md" | "lg";
     className?: string;
     onClick?: () => void;
-    initial?: any;
-    animate?: any;
-    transition?: any;
-    whileHover?: any;
-    whileTap?: any;
 }
-
 export const Button = ({
                            children,
                            variant = "primary",

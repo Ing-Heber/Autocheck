@@ -32,9 +32,9 @@ export interface Product {
     name: string;
     type: string;
     price: string;
-    image: {
-        url: string;
-        alt: string;
+    image?: {
+        url?: string;
+        alt?: string;
     };
 }
 
