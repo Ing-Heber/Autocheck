@@ -44,7 +44,7 @@ export const HeroSection = () => {
                             {/* Background overlay for better text readability */}
                             <div
                                 className={[
-                                    "absolute inset-0 bg-black/40",
+                                    "absolute inset-0 bg-black/60",
                                     slide.styles?.overlayClassName ?? ""
                                 ].join(" ")}
                             />
@@ -76,7 +76,7 @@ export const HeroSection = () => {
                                     animate={{opacity: 1, y: 0}}
                                     transition={{duration: 0.6, delay: 0.35}}
                                     className={[
-                                        "text-gray-200 mb-8 text-lg md:text-xl drop-shadow-md whitespace-pre-line",
+                                        "text-gray-200 font-medium mb-8 text-lg md:text-xl drop-shadow-md whitespace-pre-line",
                                         slide.styles?.descriptionClassName ?? "max-w-2xl"
                                     ].join(" ")}
                                 >

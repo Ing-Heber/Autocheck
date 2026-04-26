@@ -43,6 +43,7 @@ export const TestimonialsSection = () => {
                         modules={[Navigation, Pagination, Autoplay]}
                         spaceBetween={30}
                         slidesPerView={1}
+                        autoHeight
                         navigation
                         pagination={{
                             clickable: true,
@@ -64,7 +65,7 @@ export const TestimonialsSection = () => {
                                 centeredSlides: true
                             }
                         }}
-                        className="testimonials-slider h-80"
+                        className="testimonials-slider"
                     >
                         {testimonialsList.map((testimonial, i) => (
                             <SwiperSlide key={i}>
@@ -73,14 +74,14 @@ export const TestimonialsSection = () => {
                                         scale: 1.02,
                                         transition: {duration: 0.2}
                                     }}
-                                    className="p-8 bg-white rounded-2xl shadow-lg mx-4 flex flex-col justify-between h-72"
+                                    className="p-8 bg-white rounded-2xl shadow-lg mx-4 flex flex-col gap-5"
                                     aria-label={strings.testimonials.ariaLabels.testimonialCard}
                                 >
                                     <motion.p
                                         initial={{opacity: 0}}
                                         whileInView={{opacity: 1}}
                                         transition={{delay: 0.3, duration: 0.6}}
-                                        className="text-gray-600 italic mb-6 text-lg leading-relaxed flex-grow flex items-center"
+                                        className="text-gray-600 italic text-lg leading-relaxed"
                                     >
                                         &ldquo;{testimonial.quote}&rdquo;
                                     </motion.p>
@@ -100,8 +101,12 @@ export const TestimonialsSection = () => {
             </div>
 
             <style jsx global>{`
+                .testimonials-slider {
+                    padding-bottom: 2.5rem;
+                }
+
                 .testimonials-slider .swiper-pagination {
-                    bottom: -50px !important;
+                    bottom: 0 !important;
                 }
 
                 .testimonials-slider .swiper-pagination-bullet {

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaChevronDown } from "react-icons/fa";
 
 interface AccordionItem {
     id: string | number;
@@ -30,7 +31,7 @@ export const Accordion = ({ items, defaultOpenId }: AccordionProps) => {
                 >
                     <button
                         onClick={() => toggle(item.id)}
-                        className="w-full flex items-center justify-between p-4 text-left font-semibold text-blue-600 hover:bg-gray-100 transition-colors"
+                        className="cursor-pointer w-full flex items-center justify-between p-4 text-left font-semibold text-blue-600 hover:bg-gray-100 transition-colors"
                         aria-expanded={openId === item.id}
                     >
                         <span>{item.title}</span>
@@ -38,7 +39,7 @@ export const Accordion = ({ items, defaultOpenId }: AccordionProps) => {
                             animate={{ rotate: openId === item.id ? 180 : 0 }}
                             transition={{ duration: 0.3 }}
                         >
-                            ▼
+                            <FaChevronDown aria-hidden="true" />
                         </motion.span>
                     </button>
                     <AnimatePresence initial={false}>

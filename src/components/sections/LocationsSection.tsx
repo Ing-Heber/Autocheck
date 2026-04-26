@@ -7,21 +7,25 @@ import {strings} from "@/content/strings";
 import {fadeInUp} from "@/components/shared/animations";
 import {Button} from "@/components/ui";
 import {Accordion} from "@/components/ui";
+import {FaFacebookF, FaMapMarkerAlt, FaWhatsapp, FaLink} from "react-icons/fa";
 
-export const LocationsSection = () => {
+interface LocationsSectionProps {
+    title?: string;
+    subtitle?: string;
+}
+
+export const LocationsSection = ({ title, subtitle }: LocationsSectionProps) => {
     const [selectedLocation, setSelectedLocation] = useState(locations[0]);
     const [mapError, setMapError] = useState(false);
 
     const getSocialMediaIcon = (platform: string) => {
         switch (platform) {
             case 'facebook':
-                return '📘';
-            case 'googleMaps':
-                return '🗺️';
+                return <FaFacebookF aria-hidden="true" />;
             case 'whatsapp':
-                return '💬';
+                return <FaWhatsapp aria-hidden="true" />;
             default:
-                return '🔗';
+                return <FaLink aria-hidden="true" />;
         }
     };
 
@@ -71,29 +75,18 @@ export const LocationsSection = () => {
                                 <motion.button
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
-                                    className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg hover:bg-blue-700 transition-colors"
+                                    className="cursor-pointer w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg hover:bg-blue-700 transition-colors"
                                     onClick={() => handleSocialMediaClick(location.socialMedia.facebook!)}
                                     aria-label={strings.locations.ariaLabels.facebookButton}
                                 >
                                     {getSocialMediaIcon('facebook')}
                                 </motion.button>
                             )}
-                            {location.socialMedia.googleMaps && (
-                                <motion.button
-                                    whileHover={{scale: 1.1}}
-                                    whileTap={{scale: 0.95}}
-                                    className="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center text-lg hover:bg-red-700 transition-colors"
-                                    onClick={() => handleSocialMediaClick(location.socialMedia.googleMaps!)}
-                                    aria-label={strings.locations.ariaLabels.googleMapsButton}
-                                >
-                                    {getSocialMediaIcon('googleMaps')}
-                                </motion.button>
-                            )}
                             {location.socialMedia.whatsapp && (
                                 <motion.button
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
-                                    className="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center text-lg hover:bg-green-700 transition-colors"
+                                    className="cursor-pointer w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center text-lg hover:bg-green-700 transition-colors"
                                     onClick={() => handleSocialMediaClick(location.socialMedia.whatsapp!)}
                                     aria-label={strings.locations.ariaLabels.whatsappButton}
                                 >
@@ -137,12 +130,25 @@ export const LocationsSection = () => {
             aria-label={strings.locations.ariaLabels.locationsSection}
         >
             <div className="max-w-6xl mx-auto px-6">
-                <motion.h2
-                    {...fadeInUp}
-                    className="text-3xl font-semibold mb-12 text-center"
-                >
-                    {strings.locations.sectionTitle}
-                </motion.h2>
+                {title && (
+                    <motion.div
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
+                        viewport={{once: true}}
+                        className="text-center mb-12"
+                    >
+                        <motion.h2
+                            {...fadeInUp}
+                            className="text-3xl font-semibold mb-3"
+                        >
+                            {title}
+                        </motion.h2>
+                        {subtitle && (
+                            <p className="text-gray-600">{subtitle}</p>
+                        )}
+                    </motion.div>
+                )}
 
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     {/* Google Maps Column */}

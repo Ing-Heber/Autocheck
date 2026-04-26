@@ -3,15 +3,47 @@ export const strings = {
     navbar: {
         logo: "Autocheck",
         links: {
+            home: "Inicio",
+            about: "Nosotros",
             locations: "Ubicaciones",
-            contact: "Contáctanos"
+            partners: "Socios"
         },
         ariaLabels: {
             navbar: "Barra de navegación principal",
             logo: "Ir a la página principal",
+            homeLink: "Ir al inicio",
+            aboutLink: "Ir a la página Nosotros",
             locationsLink: "Ir a la sección de ubicaciones",
-            contactLink: "Ir a la sección de contacto",
-            mobileMenuToggle: "Abrir/cerrar menú móvil"
+            partnersLink: "Ir a la página de nuestros socios",
+            mobileMenuToggle: "Abrir/cerrar menú móvil",
+            mobileMenuOpen: "Abrir menú móvil",
+            mobileMenuClose: "Cerrar menú móvil",
+            mobileMenuPanel: "Menú de navegación móvil",
+            mobileSocialLinks: "Redes sociales de Autocheck en menú móvil"
+        }
+    },
+
+    // About / Nosotros Page
+    about: {
+        heroTitle: "Nuestra historia, tu confianza en cada servicio",
+        heroDescription: "En Autocheck llevamos más de 30 años acompañando a conductores de Colima con productos y servicio técnico profesional para proteger el rendimiento de sus vehículos.",
+        storyTitle: "Quiénes somos",
+        imageAlt: "Historia de Autocheck",
+        storyParagraphs: [
+            "Nacimos con una misión clara: ofrecer soluciones automotrices confiables, accesibles y con atención humana.",
+            "Hoy combinamos marcas líderes en lubricantes, filtros y bujías con un equipo capacitado que te asesora según las necesidades reales de tu auto.",
+            "Nos enfocamos en relaciones de largo plazo: servicio honesto, tiempos claros y calidad constante en cada visita."
+        ],
+        mapTitle: "Encuentra tu sucursal más cercana",
+        mapDescription: "Selecciona una ubicación para ver el mapa, teléfonos y opciones de contacto.",
+        ctaTitle: "¿Quieres atención personalizada para tu vehículo?",
+        ctaDescription: "Compártenos tus datos y te ayudamos a elegir el servicio o producto ideal.",
+        ctaButton: "Ir al formulario",
+        ariaLabels: {
+            storySection: "Sección con la historia de Autocheck",
+            mapIntro: "Introducción a la sección de ubicaciones",
+            ctaSection: "Sección con llamada a la acción hacia el formulario",
+            ctaButton: "Ir al formulario de contacto"
         }
     },
 
@@ -86,7 +118,6 @@ export const strings = {
                 },
                 name: "Mobil 1 5W-30",
                 type: "Aceite Completamente Sintético",
-                price: "$49.99"
             },
             mannAirFilter: {
                 image: {
@@ -95,7 +126,6 @@ export const strings = {
                 },
                 name: "Filtro de Aire Bosch",
                 type: "Filtro de Rendimiento",
-                price: "$24.99"
             },
             ngkSparkPlug: {
                 image: {
@@ -104,7 +134,6 @@ export const strings = {
                 },
                 name: "Bujía de Iridio NGK",
                 type: "Alto Rendimiento",
-                price: "$9.99"
             }
         },
         addToCartButton: "Agregar al Carrito",
@@ -193,6 +222,102 @@ export const strings = {
         }
     },
 
+    homePartnersCta: {
+        title: "Conoce a las marcas que respaldan cada servicio",
+        description: "Descubre a nuestros socios comerciales y las marcas líderes\ncon las que trabajamos para ofrecerte calidad, confianza y rendimiento en tu vehículo.",
+        button: "Nuestros socios",
+        ariaLabels: {
+            section: "Sección de invitación para conocer a los socios de Autocheck",
+            button: "Ir a la página de socios de Autocheck"
+        }
+    },
+
+    // Partners Page
+    partners: {
+        title: "Conoce nuestros socios",
+        subtitle: "En Autocheck trabajamos con marcas líderes para ofrecerte máxima calidad, desempeño confiable y protección en cada servicio.",
+        brands: [
+            "TotalEnergies",
+            "Bosch",
+            "WIX",
+            "Loctite",
+            "Motul",
+            "Mann Filter",
+            "Denso",
+            "Raloy",
+            "Purolator"
+        ],
+        details: [
+            {
+                trademark: "TotalEnergies",
+                description: "Lubricantes de alta tecnología diseñados para proteger motores en condiciones exigentes, con soluciones para autos, motos y transporte.",
+                benefit: "Ofrece máxima protección y rendimiento, ayudando a alargar la vida útil del motor."
+            },
+            {
+                trademark: "Bosch",
+                description: "Fabricante líder mundial de autopartes, especializado en sistemas automotrices, sensores y componentes de alta precisión.",
+                benefit: "Calidad de equipo original (OEM) y alta confiabilidad en sistemas críticos del vehículo."
+            },
+            {
+                trademark: "WIX Filters",
+                description: "Especialistas en filtración automotriz, incluyendo filtros de aceite, aire, combustible y cabina.",
+                benefit: "Garantiza filtración eficiente y mayor durabilidad del motor."
+            },
+            {
+                trademark: "Loctite",
+                description: "Marca líder en adhesivos, selladores y fijadores utilizados en aplicaciones automotrices e industriales.",
+                benefit: "Asegura sellado perfecto y fijación profesional, evitando fugas y fallas mecánicas."
+            },
+            {
+                trademark: "Motul",
+                description: "Fabricante global de lubricantes de alto rendimiento, reconocido en el mundo del automovilismo.",
+                benefit: "Brinda máximo desempeño y tecnología avanzada para motores exigentes."
+            },
+            {
+                trademark: "MANN FILTER",
+                description: "Empresa especializada en sistemas de filtración para aceite, aire, combustible y cabina.",
+                benefit: "Ofrece protección superior del motor con estándares de calidad alemana."
+            },
+            {
+                trademark: "DENSO",
+                description: "Compañía global que desarrolla autopartes avanzadas como bujías, sensores y sistemas electrónicos.",
+                benefit: "Tecnología de última generación con alto rendimiento y precisión."
+            },
+            {
+                trademark: "Raloy",
+                description: "Marca mexicana de lubricantes automotrices enfocada en rendimiento y sostenibilidad.",
+                benefit: "Excelente relación calidad-precio para el mantenimiento confiable del vehículo."
+            },
+            {
+                trademark: "Purolator",
+                description: "Fabricante reconocido de filtros automotrices con amplia trayectoria en el mercado.",
+                benefit: "Confiabilidad comprobada en la protección del motor y sistemas de filtración."
+            }
+        ],
+        cta: {
+            title: "Confía en productos de calidad",
+            primary: "Agenda tu servicio",
+            secondary: "Ver servicios"
+        },
+        modal: {
+            trigger: "Ver detalles",
+            close: "Cerrar",
+            benefitLabel: "Beneficio principal"
+        },
+        ariaLabels: {
+            pageMain: "Página de socios de Autocheck",
+            section: "Sección de marcas socias de Autocheck",
+            logosGrid: "Cuadrícula de logos de marcas socias",
+            ctaSection: "Sección de llamada a la acción para agendar servicio",
+            primaryButton: "Agendar un servicio automotriz",
+            secondaryButton: "Ver servicios disponibles",
+            detailButton: "Abrir detalles de la marca",
+            detailModal: "Detalle de marca socia",
+            closeModal: "Cerrar detalle de marca"
+        },
+        logoAltPrefix: "Logo de"
+    },
+
     // Form Section
     form: {
         sectionTitle: "Envíanos un mensaje",
@@ -224,9 +349,33 @@ export const strings = {
 
     // Footer
     footer: {
-        copyright: "AutoCare Pro — Todos los derechos reservados.",
+        brand: {
+            title: "Autocheck",
+            description: "Mantenimiento automotriz confiable con aceites, filtros y bujías de calidad para cuidar el rendimiento de tu vehiculo."
+        },
+        locations: {
+            title: "Ubicaciones",
+            items: [
+                {label: "Autocheck Manzanillo", href: "#manzanillo"},
+                {label: "Autocheck Tecoman", href: "#tecoman"},
+                {label: "Autocheck Villa de Alvarez", href: "#villa"},
+                {label: "Autocheck Tecnologico", href: "#tecnologico"},
+                {label: "Autocheck Cuauhtemoc", href: "#cuauhtemoc"}
+            ]
+        },
+        social: {
+            title: "Redes",
+            items: [
+                {label: "Facebook", href: "https://www.facebook.com/autocheckdetecoman", platform: "facebook"},
+                {label: "Instagram", href: "https://www.instagram.com/autocheckautocheck", platform: "instagram"},
+                // {label: "WhatsApp", href: "https://wa.me/5210000000000", platform: "whatsapp"}
+            ]
+        },
+        copyright: "© 2026 Autocheck — Todos los derechos reservados.",
         ariaLabels: {
-            footer: "Pie de página del sitio web con información de derechos de autor"
+            footer: "Pie de pagina del sitio web",
+            locationLink: "Enlace a ubicacion de sucursal",
+            socialLink: "Enlace a red social de Autocheck"
         }
     },
 

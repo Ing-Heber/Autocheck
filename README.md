@@ -1,3 +1,16 @@
+# autocheck-landing
+
+Landing page for an automotive retail/service brand focused on oil, filters, spark plugs, and location-based service conversion.
+
+## AI Session Docs
+
+- Project context: `PROJECT_CONTEXT.md`
+- AI instructions: `COPILOT_INSTRUCTIONS.md`
+
+These files are the source of truth for future assistant sessions in this repo.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -5,13 +18,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

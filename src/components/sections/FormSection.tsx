@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export const FormSection = () => {
     return (
-        <section id="contact-form" className="py-20 bg-white" aria-label={strings.form.ariaLabels.formSection}>
+        <section id="contact-form" className="py-20 bg-white overflow-x-hidden" aria-label={strings.form.ariaLabels.formSection}>
             <div className="container mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left side: Image */}
                     <motion.div
-                        initial={{opacity: 0, x: -50}}
-                        whileInView={{opacity: 1, x: 0}}
+                        initial={{opacity: 0, y: 30}}
+                        whileInView={{opacity: 1, y: 0}}
                         transition={{duration: 0.8}}
                         viewport={{once: true}}
                         className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl"
@@ -27,9 +27,9 @@ export const FormSection = () => {
 
                     {/* Right side: Form */}
                     <motion.div
-                        initial={{opacity: 0, x: 50}}
-                        whileInView={{opacity: 1, x: 0}}
-                        transition={{duration: 0.8}}
+                        initial={{opacity: 0, y: 30}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.8, delay: 0.1}}
                         viewport={{once: true}}
                         className="bg-gray-50 p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100"
                     >

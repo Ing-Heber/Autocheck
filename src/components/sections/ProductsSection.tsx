@@ -4,7 +4,6 @@ import {motion} from "framer-motion";
 import Image from "next/image";
 import {strings} from "@/content";
 import {fadeInUp, staggerContainer} from "@/components/shared/animations";
-import {Button} from "@/components/ui";
 
 export const ProductsSection = () => {
     const productsList = [
@@ -62,15 +61,6 @@ export const ProductsSection = () => {
                             </motion.div>
                             <h3 className="text-lg font-semibold">{product.name}</h3>
                             <p className="text-gray-500">{product.type}</p>
-                            <p className="text-xl font-bold mt-2">{product.price}</p>
-                            <Button
-                                size="md"
-                                className="mt-4"
-                                onClick={() => console.log(`Add ${product.name} to cart`)}
-                                aria-label={strings.products.ariaLabels.addToCartButton}
-                            >
-                                {strings.products.addToCartButton}
-                            </Button>
                         </motion.div>
                     ))}
                 </motion.div>

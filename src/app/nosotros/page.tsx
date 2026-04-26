@@ -1,21 +1,13 @@
-"use client";
+"use client"
 
-import {
-    HeroSection,
-    ServicesSection,
-    HowItWorksSection,
-    TestimonialsSection,
-    LocationsSection,
-    CTASection,
-    FormSection,
-} from "@/components/sections";
+import {AboutStorySection, CTASection, Footer, FormSection, LocationsSection} from "@/components/sections";
 import {strings} from "@/content";
 
-export default function Home() {
+export default function NosotrosPage() {
     return (
-        <main className="min-h-screen bg-gray-50 text-gray-900">
-            <HeroSection/>
-            <ServicesSection/>
+        <main className="min-h-screen bg-gray-50 text-gray-900 pt-16">
+            <AboutStorySection/>
+
             <CTASection
                 id="partners-cta"
                 background={{color: "#1E3A8A"}}
@@ -27,11 +19,16 @@ export default function Home() {
                 }}
                 action={{type: "route", href: "/partners"}}
             />
-            <HowItWorksSection/>
-            <TestimonialsSection/>
-            <LocationsSection title={strings.locations.sectionTitle} />
-            <CTASection background={{imageUrl: "/images/car-cta-md-res.jpg"}}/>
+
+            <section className="bg-white" aria-label={strings.about.ariaLabels.mapIntro}>
+                <LocationsSection
+                    title={strings.about.mapTitle}
+                    subtitle={strings.about.mapDescription}
+                />
+            </section>
             <FormSection/>
+            <Footer/>
         </main>
     );
 }
+
