@@ -13,6 +13,7 @@ export const ServicesSection = () => {
 
     return (
         <section
+            id="services"
             className="py-20 bg-white"
             aria-label={strings.services.ariaLabels.servicesSection}
         >

@@ -18,7 +18,7 @@ export const HowItWorksSection = () => {
                     {strings.howItWorks.sectionTitle}
                 </motion.h2>
                 <motion.div
-                    className="grid md:grid-cols-3 gap-10"
+                    className="grid md:grid-cols-3 gap-10 justify-center"
                     variants={staggerContainer}
                     initial="initial"
                     whileInView="animate"
@@ -36,7 +36,7 @@ export const HowItWorksSection = () => {
                                 scale: 1.05,
                                 transition: {duration: 0.2}
                             }}
-                            className="p-6 border rounded-2xl shadow-sm bg-gray-50"
+                            className="max-w-80 p-6 border rounded-2xl shadow-sm bg-gray-50"
                             aria-label={strings.howItWorks.ariaLabels.stepCard}
                         >
                             <motion.div

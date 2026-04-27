@@ -52,6 +52,21 @@ export default function Navbar() {
         return () => window.removeEventListener("keydown", onKeyDown);
     }, [isMobileMenuOpen]);
 
+    useEffect(() => {
+        const previousBodyOverflow = document.body.style.overflow;
+        const previousHtmlOverflow = document.documentElement.style.overflow;
+
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = "hidden";
+            document.documentElement.style.overflow = "hidden";
+        }
+
+        return () => {
+            document.body.style.overflow = previousBodyOverflow;
+            document.documentElement.style.overflow = previousHtmlOverflow;
+        };
+    }, [isMobileMenuOpen]);
+
 
     const handlePartnersClick = () => {
         setIsMobileMenuOpen(false);
@@ -164,7 +179,6 @@ export default function Navbar() {
             <div className={`md:hidden fixed inset-0 z-40 transition-opacity duration-300 ${
                 isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
             }
-            ${useSolidNavbar ? "bg-gray-950" : "bg-transparent backdrop-blur-sm"}
             `}>
                 <button
                     type="button"

@@ -30,7 +30,7 @@ export default function Home() {
             <HowItWorksSection/>
             <TestimonialsSection/>
             <LocationsSection title={strings.locations.sectionTitle} />
-            <CTASection background={{imageUrl: "/images/car-cta-md-res.jpg"}}/>
+            <CTASection background={{imageUrl: "/images/car-garage-cta-bg.jpg"}}/>
             <FormSection/>
         </main>
     );

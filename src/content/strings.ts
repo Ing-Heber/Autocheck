@@ -151,7 +151,7 @@ export const strings = {
         addressLabel: "Dirección:",
         scheduleLabel: "Horario:",
         phonesLabel: "Teléfonos:",
-        socialMediaLabel: "Síguenos:",
+        socialMediaLabel: "Redes:",
         callButton: "Llamar",
         visitButton: "Visitar",
         socialMedia: {
@@ -356,11 +356,11 @@ export const strings = {
         locations: {
             title: "Ubicaciones",
             items: [
-                {label: "Autocheck Manzanillo", href: "#manzanillo"},
-                {label: "Autocheck Tecoman", href: "#tecoman"},
-                {label: "Autocheck Villa de Alvarez", href: "#villa"},
-                {label: "Autocheck Tecnologico", href: "#tecnologico"},
-                {label: "Autocheck Cuauhtemoc", href: "#cuauhtemoc"}
+                {label: "Autocheck Manzanillo", href: "https://maps.app.goo.gl/dWW7R5Lyi93mofe37"},
+                {label: "Autocheck Tecoman", href: "https://maps.app.goo.gl/DKn1Wyv2TCg1jiyw9"},
+                {label: "Autocheck Villa de Alvarez", href: "https://maps.app.goo.gl/V5KucPBpytZYK8BQ6"},
+                {label: "Autocheck Tecnologico", href: "https://maps.app.goo.gl/TuhvpYDC4WyKVJiT8"},
+                {label: "Autocheck Cuauhtemoc", href: "https://maps.app.goo.gl/8aoviVYuQTPMLKdF7"}
             ]
         },
         social: {

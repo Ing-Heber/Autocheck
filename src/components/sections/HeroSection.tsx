@@ -1,6 +1,7 @@
 "use client";
 
 import {motion} from "framer-motion";
+import Link from "next/link";
 import {Button} from "@/components/ui";
 import {hero} from "@/data";
 
@@ -83,21 +84,40 @@ export const HeroSection = () => {
                                     {slide.description}
                                 </motion.p>
 
-                                <Button
-                                    size="lg"
-                                    initial={{opacity: 0, scale: 0.8}}
-                                    animate={{opacity: 1, scale: 1}}
-                                    transition={{duration: 0.5, delay: 0.55}}
-                                    whileHover={{scale: 1.05, transition: {duration: 0.2}}}
-                                    whileTap={{scale: 0.98}}
-                                    onClick={() => console.log("Hero CTA clicked")}
-                                    className={[
-                                        "border-2 border-white bg-transparent text-white hover:bg-gray-100 hover:text-gray-900 px-8 py-4 text-lg font-semibold shadow-lg",
-                                        slide.styles?.ctaClassName ?? ""
-                                    ].join(" ")}
-                                >
-                                    {slide.ctaButton}
-                                </Button>
+                                {slide.url ? (
+                                    <Link href={slide.url} passHref>
+                                        <Button
+                                            size="lg"
+                                            initial={{opacity: 0, scale: 0.8}}
+                                            animate={{opacity: 1, scale: 1}}
+                                            transition={{duration: 0.5, delay: 0.55}}
+                                            whileHover={{scale: 1.05, transition: {duration: 0.2}}}
+                                            whileTap={{scale: 0.98}}
+                                            className={[
+                                                "border-2 border-white bg-transparent text-white hover:bg-gray-100 hover:text-gray-900 px-8 py-4 text-lg font-semibold shadow-lg",
+                                                slide.styles?.ctaClassName ?? ""
+                                            ].join(" ")}
+                                        >
+                                            {slide.ctaButton}
+                                        </Button>
+                                    </Link>
+                                ) : (
+                                    <Button
+                                        size="lg"
+                                        initial={{opacity: 0, scale: 0.8}}
+                                        animate={{opacity: 1, scale: 1}}
+                                        transition={{duration: 0.5, delay: 0.55}}
+                                        whileHover={{scale: 1.05, transition: {duration: 0.2}}}
+                                        whileTap={{scale: 0.98}}
+                                        onClick={() => console.log("Hero CTA clicked")}
+                                        className={[
+                                            "border-2 border-white bg-transparent text-white hover:bg-gray-100 hover:text-gray-900 px-8 py-4 text-lg font-semibold shadow-lg",
+                                            slide.styles?.ctaClassName ?? ""
+                                        ].join(" ")}
+                                    >
+                                        {slide.ctaButton}
+                                    </Button>
+                                )}
                             </div>
                         </motion.section>
                     </SwiperSlide>

@@ -8,6 +8,7 @@ export const hero: HeroSlide[] = [
         titleHighlight: "",
         description: strings.hero.firstImage.description,
         ctaButton: strings.hero.firstImage.ctaButton,
+        url: "#contact-form",
         ariaLabels: strings.hero.firstImage.ariaLabels,
         styles: {
             backgroundPosition: "60% center",
@@ -23,6 +24,7 @@ export const hero: HeroSlide[] = [
         titleHighlight: "",
         description: strings.hero.secondImage.description,
         ctaButton: strings.hero.secondImage.ctaButton,
+        url: "#contact-form",
         ariaLabels: strings.hero.secondImage.ariaLabels,
         styles: {
             backgroundPosition: "center",
@@ -39,6 +41,7 @@ export const hero: HeroSlide[] = [
         titleHighlight: "",
         description: strings.hero.thirdImage.description,
         ctaButton: strings.hero.thirdImage.ctaButton,
+        url: "/partners",
         ariaLabels: strings.hero.thirdImage.ariaLabels,
         styles: {
             backgroundPosition: "center",

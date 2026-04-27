@@ -6,6 +6,7 @@ export interface HeroSlide {
     titleHighlight?: string;
     description: string;
     ctaButton: string;
+    url?: string;
     ariaLabels: {
         heroSection: string;
         ctaButton: string;
@@ -54,3 +55,13 @@ export interface Location {
         whatsapp?: string;
     };
 }
+
+export type LocationOffice = Omit<Location, "name">;
+
+export interface LocationGroup {
+    label: string;
+    offices: LocationOffice[];
+}
+
+export type LocationsByName = Record<string, LocationGroup>;
+
