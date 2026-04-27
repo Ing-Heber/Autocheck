@@ -1,6 +1,6 @@
 "use client"
 
-import {AboutStorySection, CTASection, Footer, FormSection, LocationsSection} from "@/components/sections";
+import {AboutStorySection, CTASection, FormSection, LocationsSection} from "@/components/sections";
 import {strings} from "@/content";
 
 export default function NosotrosPage() {
@@ -27,7 +27,6 @@ export default function NosotrosPage() {
                 />
             </section>
             <FormSection/>
-            <Footer/>
         </main>
     );
 }
