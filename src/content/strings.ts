@@ -224,7 +224,7 @@ export const strings = {
 
     homePartnersCta: {
         title: "Conoce a las marcas que respaldan cada servicio",
-        description: "Descubre a nuestros socios comerciales y las marcas líderes\ncon las que trabajamos para ofrecerte calidad,\n confianza y rendimiento en tu vehículo.",
+        description: "Descubre a nuestros socios comerciales y las marcas líderes\ncon las que trabajamos para ofrecerte calidad,\nconfianza y rendimiento en tu vehículo.",
         button: "Nuestros socios",
         ariaLabels: {
             section: "Sección de invitación para conocer a los socios de Autocheck",
