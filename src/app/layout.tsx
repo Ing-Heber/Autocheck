@@ -13,6 +13,15 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
     title: "Autocheck",
     description: "Lo mejor para tu auto en lubricantes y filtros",
+    icons: {
+        icon: [
+            {
+                url: "/images/ac-icon.png", type: "image/png"
+            },
+        ],
+        shortcut: "/images/ac-icon.png",
+        apple: "/images/ac-icon.png"
+    }
 };
 
 export default function RootLayout({
