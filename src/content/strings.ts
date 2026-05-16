@@ -335,8 +335,16 @@ export const strings = {
             }
         },
         submitButton: "Enviar Mensaje",
+        submitting: "Enviando...",
         successMessage: "¡Gracias! Tu mensaje ha sido enviado correctamente.",
+        errorMessage: "No se pudo enviar el mensaje. Por favor intenta de nuevo.",
         imageAlt: "Técnico trabajando en un vehículo",
+        validation: {
+            name: "El nombre debe tener al menos 2 caracteres.",
+            email: "Ingresa un correo electrónico válido.",
+            phone: "Ingresa un número de 10 dígitos (ej. 3121234567).",
+            message: "El mensaje debe tener al menos 10 caracteres."
+        },
         ariaLabels: {
             formSection: "Sección de contacto con formulario",
             nameInput: "Campo para ingresar nombre completo",

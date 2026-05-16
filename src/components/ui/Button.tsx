@@ -9,6 +9,8 @@ interface ButtonProps extends MotionProps {
     size?: "sm" | "md" | "lg";
     className?: string;
     onClick?: () => void;
+    type?: "button" | "submit" | "reset";
+    disabled?: boolean;
 }
 export const Button = ({
                            children,
@@ -16,6 +18,8 @@ export const Button = ({
                            size = "md",
                            className = "",
                            onClick,
+                           type = "button",
+                           disabled = false,
                            initial,
                            animate,
                            transition,
@@ -38,6 +42,8 @@ export const Button = ({
 
     return (
         <motion.button
+            type={type}
+            disabled={disabled}
             className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
             onClick={onClick}
             initial={initial}
