@@ -2,6 +2,7 @@
   "name": "autocheck-landing",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
@@ -9,16 +10,23 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@radix-ui/react-dialog": "^1.1.15",
     "framer-motion": "^12.23.24",
     "next": "15.5.9",
+    "nodemailer": "^8.0.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "swiper": "^12.0.3"
+    "react-hook-form": "^7.76.0",
+    "react-icons": "^5.6.0",
+    "swiper": "^12.0.3",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/nodemailer": "^8.0.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
