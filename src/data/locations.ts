@@ -5,12 +5,12 @@ export const locationsByName: LocationsByName = {
         label: "Villa de Álvarez",
         offices: [
             {
-                address: "Av Tecnológico 38, Villa Carlo, 28975 Villa de Álvarez, Col.",
+                address: "C. Hidalgo 211, Rinconada de la Hacienda Nte, 28978 Cdad. de Villa de Álvarez, Col.",
                 schedule: "Lunes a Viernes 9:00am a 7:00pm\nSábado 9:00 am a 3:00pm",
                 phones: ["(312) 311-6987"],
                 socialMedia: {
                     facebook: "https://www.facebook.com/autochecktecnologico/",
-                    googleMaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241298.50630656743!2d-103.94552394308955!3d19.09496646094128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842545325f91d24f%3A0xddbf1f4611fb6258!2sAutocheck!5e0!3m2!1ses!2smx!4v1571772676264!5m2!1ses!2smx",
+                    googleMaps: "https://www.google.com/maps?q=C.+Hidalgo+211,+Rinconada+de+la+Hacienda+Nte,+28978+Cdad.+de+Villa+de+Álvarez,+Col.&output=embed",
                     whatsapp: "https://wa.me/523123116987"
                 }
             },
@@ -30,12 +30,12 @@ export const locationsByName: LocationsByName = {
         label: "Cuauhtémoc",
         offices: [
             {
-                address: "Melchor Ocampo No. 70-B Col. Centro C.P. 28500",
+                address: "Francisco Velasco Curiel s/n, Col. Guayavillo, 28500 Cuauhtémoc, Col.",
                 schedule: "Lunes a Viernes 9:00am a 7:00pm\nSábado 9:00 am a 3:00pm",
                 phones: ["(312) 328-00-83"],
                 socialMedia: {
                     facebook: "https://www.facebook.com/autocheckcuauhtemoc/",
-                    googleMaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.004716119643!2d-103.60497388461356!3d19.32560164909995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425593c78b67b89%3A0x6f201445b0dba4!2sRefaccionaria%20Autocheck%20Cuauht%C3%A9moc!5e0!3m2!1ses!2smx!4v1570898224775!5m2!1ses!2smx",
+                    googleMaps: "https://www.google.com/maps?q=Francisco+Velasco+Curiel+s%2Fn,+Col.+Guayavillo,+28500+Cuauhtémoc,+Col.&output=embed",
                     whatsapp: "https://wa.me/523123280083"
                 }
             }
